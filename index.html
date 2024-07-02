@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="data-input-box">
+            <span>Search: </span><input  placeholder="Type a name to search" id="nickName">
+            
+            <button id="keyTap" onclick="add()" >Search</button>
+        </div>
+        
+    </div>
+    <hr>
+    <table >
+        <tr>
+            <th>NAME</th>
+            <th>REGISTRATION</th>
+            <th>GRADE</th>
+            <th>ATTENDENCE</th>
+            <th>POSITION</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id='reg'></td>
+            <td id="grade"></td>
+            <td id="attendence"></td>
+            <td id="position"></td>
+        </tr>
+        
+        <tr id="screen">
+            <th >NUMBER</th>
+            <th >PASSWORD</th>
+            <th >RESULT</th>
+            <th >TOTAL STRIKE</th>
+            <th >PRESENT</th>
+        </tr>
+    
+       
+        <tr>
+            <td  class="fill"><p id="contactNumber"></p><button class="screen" onclick=copyNumber()  id="A">C</button></td>
+            <td  class="fill"><p id="password"></p><button onclick=copyPassword() class="screen" id="B">C</button></td>
+            <td id="result" ><button onclick=showResult() class="screen" id="C">CLICK TO SEE</button></td>
+            <td id="strikeCount"></td>
+            <td id="presentToday"></td>
+        </tr>
+       
+    </table>
+
+    <table>
+        <tr>
+            <th>Legal Information</th>
+        </tr>
+        
+        <tr class="notice">
+            <td>
+                <span class="color-danger" id="catagory"> </span><h5 id="reason"><br><h5 id="recomendation"></h5> </h5> <span class="color-y" id="rulecode"> </span><a href="" id="strikecode"> </a> <p class="text-muted" id="date">   </p>
+            </td>
+        </tr>
+        <tr class="notice">
+            <td>
+                <span class="color-danger" id="catagory-2"></span><h5 id="reason-2"><br><h5 id="recomendation-2"></h5></h5> <span class="color-y" id="rulecode-2"></span><a href="" id="strikecode-2"></a> <p class="text-muted" id="date-2">   </p>
+            </td>
+        </tr>
+        <tr class="notice">
+            <td>
+                <span class="color-danger" id="catagory-3"></span><h5 id="reason-3"><br><h5 id="recomendation-3"></h5></h5> <span class="color-y" id="rulecode-3"></span><a href="" id="strikecode-3"></a> <p class="text-muted" id="date-3">   </p>
+            </td>
+        </tr>
+        <tr class="notice">
+            <td>
+                <span class="color-danger" id="catagory-4"></span><h5 id="reason-4"><br><h5 id="recomendation-4"></h5></h5> <span class="color-y" id="rulecode-4"></span><a href="" id="strikecode-4"></a> <p class="text-muted" id="date-4">   </p>
+            </td>
+        </tr>
+        <tr class="notice">
+            <td>
+                <span class="color-danger" id="catagory-5"></span><h5 id="reason-5"><br><h5 id="recomendation-5"></h5></h5> <span class="color-y" id="rulecode-5"></span><a href="" id="strikecode-5"></a> <p class="text-muted" id="date-5">   </p>
+            </td>
+        </tr>
+    </table>
+    <div class="details">
+        <table>
+            <tr>
+                <th><p id="ERROR" class="color-danger screen"></p></th>
+            </tr>
+        </table>
+    </div>
+    
+    <table class="screen" id="resultSheet">
+        <tr>
+            <th class="subcode">SUBJECT-CODE</th>
+            <th>SUBJECT</th>
+            <th>MARK</th>
+            <th>GRADE</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>BANGLA</td>
+            <td id="banglaNumber"></td>
+            <td id="banglaGrade"></td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td >ENGLISH</td>
+            <td id="englishNumber"></td>
+            <td id="englishGrade"></td>
+        </tr>
+        <tr>
+            <td>143</td>
+            <td>MATH</td>
+            <td id="mathNumber"></td>
+            <td id="mathGrade"></td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>BGS</td>
+            <td id="bgsNumber"></td>
+            <td id="bgsGrade"></td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>PHYSICS</td>
+            <td id="physicsNumber"></td>
+            <td id="physicsGrade"></td>
+        </tr>
+        <tr>
+            <td>134</td>
+            <td>CHEMISTERY</td>
+            <td id="chemisteryNumber"></td>
+            <td id="chemisteryGrade"></td>
+        </tr>
+        <tr>
+            <td>136</td>
+            <td>BIOLOGY</td>
+            <td id="biologyNumber"></td>
+            <td id="biologyGrade"></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+    <script src="information.js"></script>
+    <script src="strikeList.js"></script>
+    <script src="result.js"></script>
+</body>
+</html>
